@@ -1,0 +1,19 @@
+.btnContainer {
+  display: flex;
+  padding: 0 22px;
+}
+
+.bton {
+  color: #0f0f0f;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Roboto", "Arial", sans-serif;
+  padding: 8px 12px;
+  margin: 12px 12px 12px 0;
+  margin-left: 0;
+  font-size: 1.1rem;
+  font-weight: 550;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
