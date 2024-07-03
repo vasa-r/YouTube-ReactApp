@@ -1,0 +1,8 @@
+.sideBarContainer {
+  width: 250px;
+  /* background-color: beige; */
+  position: fixed;
+  top: 8%;
+  height: 100%;
+  overflow-y: scroll;
+}

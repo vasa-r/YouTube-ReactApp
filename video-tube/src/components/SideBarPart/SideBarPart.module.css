@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+.parts {
+  padding: 10px 25px;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.content {
+  font-size: 1rem;
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 15px;
+  margin-left: -10px;
+  width: calc(100% + 20px);
+}
