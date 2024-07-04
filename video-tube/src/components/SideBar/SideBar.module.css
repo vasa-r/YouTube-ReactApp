@@ -1,8 +1,10 @@
 .sideBarContainer {
   width: 250px;
-  /* background-color: beige; */
   position: fixed;
   top: 8%;
   height: 100%;
   overflow-y: scroll;
+  scrollbar-color: #606060 transparent;
+  scrollbar-width: 2px;
+  scroll-behavior: smooth;
 }

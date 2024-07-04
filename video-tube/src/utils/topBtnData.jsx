@@ -47,6 +47,10 @@ const topBtnData = [
     id: "4h5i6j",
     name: "Comedy",
   },
+  {
+    id: "4h5dsgfkj",
+    name: "Horror",
+  },
 ];
 
 export default topBtnData;

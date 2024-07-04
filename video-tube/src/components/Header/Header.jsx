@@ -6,12 +6,24 @@ import Video from "../../assets/video.svg";
 import Notification from "../../assets/bell.svg";
 import User from "../../assets/user.svg";
 import styles from "../Header/Header.module.css";
+import { useDispatch } from "react-redux";
+import { menuToggle } from "../../redux/slices/menuSlice.jsx";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const handleMenuOpen = () => {
+    dispatch(menuToggle());
+  };
   return (
     <div className={styles.headerContainer}>
       <div className={styles.menuLogo}>
-        <img className={styles.menuIcon} src={MenuIcon} alt="menu-icon" />
+        <img
+          className={styles.menuIcon}
+          src={MenuIcon}
+          alt="menu-icon"
+          onClick={handleMenuOpen}
+        />
         <img className={styles.youtubeLogo} src={Logo} alt="logo" />
       </div>
       <div className={styles.searchMic}>
