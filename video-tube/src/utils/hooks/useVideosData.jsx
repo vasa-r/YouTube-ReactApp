@@ -10,8 +10,9 @@ const useVideosData = () => {
   const fetchData = async () => {
     const fetchData = await fetch(API_URI);
     const response = await fetchData.json();
-    console.log(response);
-    setVideoDatas(response);
+    //console.log(response);
+    const videos = response.items;
+    setVideoDatas(videos);
   };
 
   return videDatas;

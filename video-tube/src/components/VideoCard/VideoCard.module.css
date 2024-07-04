@@ -1,0 +1,56 @@
+.videoCardContainer {
+  width: 330px;
+  /* max-width: 500px; */
+  height: 280px;
+  margin: 0 14px 15px 0;
+}
+
+.thumbNail {
+  margin-bottom: 5px;
+}
+.thumbNail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.videoDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.channelLogo img {
+  width: 30px;
+}
+
+.menu img {
+  width: 30px;
+  height: 25px;
+}
+
+.videoDetail p {
+  margin-bottom: 3px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.chnlTitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.viewDate {
+  display: flex;
+}
+
+.viewCount {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+}

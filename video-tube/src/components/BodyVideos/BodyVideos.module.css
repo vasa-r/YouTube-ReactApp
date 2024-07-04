@@ -1,3 +1,7 @@
 .videosContainer {
   padding: 10px 22px;
+  display: flex;
+  /* justify-content: ; */
+  flex-wrap: wrap;
+  gap: auto;
 }
