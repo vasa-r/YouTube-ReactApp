@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../SideBarPart/SideBarPart.module.css";
+import { Link } from "react-router-dom";
 
 const SideBarPart = ({ data }) => {
   return (
@@ -11,9 +12,9 @@ const SideBarPart = ({ data }) => {
       )}
       {data.items.map((category, index) => {
         return (
-          <p key={index} className={styles.content}>
-            {category.name}
-          </p>
+          <Link to={category.link} key={index}>
+            <p className={styles.content}>{category.name}</p>
+          </Link>
         );
       })}
       <hr />
