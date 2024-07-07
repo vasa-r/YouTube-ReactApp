@@ -29,6 +29,7 @@ const Header = () => {
       <div className={styles.searchMic}>
         <div className={styles.search}>
           <input id={styles.input} type="text" placeholder="Search" />
+          <div className="suggestioinTab"></div>
           <button className={styles.searchBtn}>
             <img src={Search} alt="search-icon" />
           </button>
