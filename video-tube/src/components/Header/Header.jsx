@@ -27,12 +27,25 @@ const Header = () => {
         <img className={styles.youtubeLogo} src={Logo} alt="logo" />
       </div>
       <div className={styles.searchMic}>
-        <div className={styles.search}>
-          <input id={styles.input} type="text" placeholder="Search" />
-          <button className={styles.searchBtn}>
-            <img src={Search} alt="search-icon" />
-          </button>
+        <div className="suggestTabInput">
+          <div className={styles.search}>
+            <input id={styles.input} type="text" placeholder="Search" />
+            <button className={styles.searchBtn}>
+              <img src={Search} alt="search-icon" />
+            </button>
+          </div>
+          <div className={styles.suggestionTab}>
+            <p>
+              <img src={Search} alt="search icon" />
+              vasanth here
+            </p>
+            <p>
+              <img src={Search} alt="search icon" />
+              vasanth here
+            </p>
+          </div>
         </div>
+
         <div className={styles.mic}>
           <img src={Mic} alt="mic" />
         </div>

@@ -10,10 +10,11 @@ const SideBar = () => {
   if (!isOpen) {
     return;
   }
+
   return (
     <div className={styles.sideBarContainer}>
       {sideBarData.map((part, index) => {
-        return <SideBarPart key={index} data={part} />;
+        return <SideBarPart data={part} key={index} />;
       })}
     </div>
   );

@@ -3,7 +3,7 @@ import Menu from "../../assets/threedot.png";
 import styles from "../VideoCard/VideoCard.module.css";
 
 const VideoCard = ({ data }) => {
-  console.log(data);
+  // console.log(data);
 
   function formatViews(views) {
     if (views >= 1e6) {
@@ -43,7 +43,7 @@ const VideoCard = ({ data }) => {
 
   const title = data.snippet.localized.title;
   const trimmedTitle = trimTitle(title);
-  console.log(title);
+  // console.log(title);
 
   return (
     <div className={styles.videoCardContainer}>
