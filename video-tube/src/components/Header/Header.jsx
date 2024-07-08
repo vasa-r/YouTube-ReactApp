@@ -5,7 +5,7 @@ import Mic from "../../assets/microphone.svg";
 import Video from "../../assets/video.svg";
 import Notification from "../../assets/bell.svg";
 import User from "../../assets/user.svg";
-import styles from "../Header/header.module.css";
+import styles from "../Header/Header.module.css";
 import { useDispatch } from "react-redux";
 import { menuToggle } from "../../redux/slices/menuSlice.jsx";
 
