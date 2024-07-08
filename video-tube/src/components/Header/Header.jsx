@@ -34,6 +34,7 @@ const Header = () => {
     return () => {
       clearTimeout(timer);
     };
+    // eslint-disable-next-line
   }, [searchQuery]);
 
   const fetchSuggestion = async () => {
