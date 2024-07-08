@@ -108,7 +108,7 @@
   position: fixed;
   width: 512px;
   padding: 8px;
-  height: 400px;
+  height: 310px;
   background-color: #ffffff;
   overflow-y: scroll;
 }
@@ -119,6 +119,11 @@
   padding: 5px 15px;
   display: flex;
   align-items: center;
+  cursor: default;
+}
+
+.suggestionTab p:hover {
+  background-color: #f5f7f8;
 }
 
 .suggestionTab p img {
