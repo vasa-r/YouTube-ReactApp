@@ -8,7 +8,7 @@
   width: 100%;
   top: 0;
   z-index: 2020;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.1); */
   background-color: #ffffff;
 }
 
@@ -53,6 +53,7 @@
   font-size: 18px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  /* position: fixed; */
 }
 
 .searchBtn {
@@ -94,4 +95,18 @@
 .vidNotiUser img {
   width: 25px;
   cursor: pointer;
+}
+
+/* ------------------------------ suggestioin tab ------------------------------ */
+
+.suggestionTab {
+  /* border: 1px solid black; */
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  position: fixed;
+  width: 512px;
+  padding: 8px;
+  height: 400px;
+  background-color: #ffffff;
 }
