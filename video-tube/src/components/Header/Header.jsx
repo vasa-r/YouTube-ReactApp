@@ -9,7 +9,7 @@ import styles from "../Header/Header.module.css";
 import { useDispatch } from "react-redux";
 import { menuToggle } from "../../redux/slices/menuSlice.jsx";
 import { AUTOCOMPLETE_API } from "../../utils/constants.jsx";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,6 +17,8 @@ const Header = () => {
   const [showSuggestion, setShowSuggestion] = useState(false);
 
   // console.log(searchQuery);
+
+  const cache = useRef({});
 
   const dispatch = useDispatch();
 
@@ -38,10 +40,17 @@ const Header = () => {
   }, [searchQuery]);
 
   const fetchSuggestion = async () => {
+    if (cache.current[searchQuery]) {
+      // console.log(cache.current[searchQuery]);
+      setSuggestions(cache.current[searchQuery]);
+      return;
+    }
+
     const res = await fetch(AUTOCOMPLETE_API + searchQuery);
     const json = await res.json();
-    // console.log(json[1]);
-    setSuggestions(json[1]);
+    const fetchedSuggestion = json[1];
+    cache.current[searchQuery] = fetchedSuggestion;
+    setSuggestions(fetchedSuggestion);
   };
 
   return (
