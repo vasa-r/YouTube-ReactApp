@@ -25,6 +25,7 @@ iframe {
   display: flex;
   flex-direction: column;
   position: relative;
+  flex-direction: column-reverse;
 }
 
 .chatTxt {
@@ -60,4 +61,5 @@ iframe {
 
 .chat {
   overflow-y: scroll;
+  /* display: flex; */
 }

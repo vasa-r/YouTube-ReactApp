@@ -2,16 +2,13 @@ import React from "react";
 import styles from "../LiveChat/LiveChat.module.css";
 import User from "../../assets/user.svg";
 
-const LiveChat = () => {
+const LiveChat = ({ name, message }) => {
   return (
     <div className={styles.chatContainer}>
       <img src={User} alt="user icon" className={styles.chatImg} />
       <div className={styles.chatUser}>
-        <span className={styles.name}>Vasanth Raman</span>
-        <span className={styles.msg}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum,
-          vel. Tenetur non fugiat molestias mollitia amet vero.
-        </span>
+        <span className={styles.name}>{name}</span>
+        <span className={styles.msg}>{message}</span>
       </div>
     </div>
   );

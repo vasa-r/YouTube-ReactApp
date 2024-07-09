@@ -10,5 +10,9 @@ export const AUTOCOMPLETE_API =
   "https://suggestqueries.google.com/complete/search?client=firefox&q=";
 
 export const randomName = () => {
-  return names[Math.floor(Math.random * names.length)];
+  return names[Math.floor(Math.random() * names.length)];
+};
+
+export const randomNumber = () => {
+  return Math.floor(Math.random() * 13);
 };
