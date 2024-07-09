@@ -1,3 +1,5 @@
+import names from "../utils/namesDataLiveChat.jsx";
+
 const API_KEY = "";
 
 export const API_URI =
@@ -6,3 +8,7 @@ export const API_URI =
 
 export const AUTOCOMPLETE_API =
   "https://suggestqueries.google.com/complete/search?client=firefox&q=";
+
+export const randomName = () => {
+  return names[Math.floor(Math.random * names.length)];
+};
