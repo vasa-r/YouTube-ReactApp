@@ -45,6 +45,7 @@ const WatchPage = () => {
     return () => {
       clearInterval(timer);
     };
+    // eslint-disable-next-line
   }, []);
 
   const handleClick = () => {
