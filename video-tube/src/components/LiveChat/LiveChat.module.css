@@ -1,7 +1,6 @@
 .chatContainer {
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-between; */
   margin: 3px;
   padding: 5px;
 }
